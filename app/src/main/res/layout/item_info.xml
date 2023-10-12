@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:fontFamily="@font/bookos"
+        android:text="Mavjud kurslar O'zbekiston Respublikasi NBU bankidan rasmiy olingan kuraslar har kuni o'zgarib boradi \n O'zingiz istagan kurs xaqida ma'lumot olmoqchi bo'lsngiz o'sha kursingiz ustiga bir marotaba bosing"
+        />
+
+    <TextView
+        android:id="@+id/date_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Kurslarning yangilangan sanasi:"
+        android:textColor="#000"
+        android:fontFamily="@font/bookos"
+        />
+
+</LinearLayout>

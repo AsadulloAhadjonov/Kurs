@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/gradient"
+        >
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/baseline_star_24"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uzbekistan"
+            android:fontFamily="@font/aaa"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            />
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/baseline_info_24"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scrollbarSize="0dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="370dp"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@drawable/bac_blue"
+                android:layout_margin="10dp"
+                android:id="@+id/usa"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/flag_img_usa"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_1"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/country_usa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AQSH Dolari"
+                    android:textSize="17sp"
+                    android:layout_marginHorizontal="20dp"
+                    android:textColor="#fff"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/flag_img_usa"
+                    />
+
+                <TextView
+                    android:id="@+id/valyuta_name_usa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USD"
+                    android:textSize="20sp"
+                    android:textColor="#E6E6E6"
+                    android:layout_marginHorizontal="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/country_usa"
+                    app:layout_constraintLeft_toRightOf="@id/flag_img_usa"
+                    />
+
+                <ImageView
+                    android:id="@+id/valyuta_img_usa"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/baseline_attach_money_24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/valyuta_curs_usa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00,00"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    app:layout_constraintTop_toBottomOf="@id/flag_img_usa"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uzbekistan"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    app:layout_constraintTop_toBottomOf="@id/valyuta_img_usa"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="370dp"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@drawable/bac_red"
+                android:layout_margin="10dp"
+                android:id="@+id/rus"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/flag_img_rus"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_3"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/country_rus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rossiya"
+                    android:textSize="17sp"
+                    android:layout_marginHorizontal="20dp"
+                    android:textColor="#fff"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/flag_img_rus"
+                    />
+
+                <TextView
+                    android:id="@+id/valyuta_name_rus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RUB"
+                    android:textSize="20sp"
+                    android:textColor="#E6E6E6"
+                    android:layout_marginHorizontal="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/country_rus"
+                    app:layout_constraintLeft_toRightOf="@id/flag_img_rus"
+                    />
+
+                <ImageView
+                    android:id="@+id/valyuta_img_rus"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/baseline_currency_ruble_24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/valyuta_curs_rus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00,00"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    app:layout_constraintTop_toBottomOf="@id/flag_img_rus"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uzbekistan"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    app:layout_constraintTop_toBottomOf="@id/valyuta_img_rus"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="370dp"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@drawable/bac_green"
+                android:layout_margin="10dp"
+                android:id="@+id/yevro"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/flag_img"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_5"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yevropa"
+                    android:textSize="17sp"
+                    android:layout_marginHorizontal="20dp"
+                    android:textColor="#fff"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/flag_img"
+                    />
+
+                <TextView
+                    android:id="@+id/valyuta_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EURO"
+                    android:textSize="20sp"
+                    android:textColor="#E6E6E6"
+                    android:layout_marginHorizontal="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/country"
+                    app:layout_constraintLeft_toRightOf="@id/flag_img"
+                    />
+
+                <ImageView
+                    android:id="@+id/valyuta_img"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/baseline_euro_24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/valyuta_curs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00,00"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    app:layout_constraintTop_toBottomOf="@id/flag_img"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uzbekistan"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    app:layout_constraintTop_toBottomOf="@id/valyuta_img"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mavjud Kurslar"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_kurslar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>
