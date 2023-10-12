@@ -22,11 +22,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="AQSH Dolar"
-            android:textSize="20sp"
+            android:textSize="@dimen/_17ssp"
             android:textStyle="bold"
             android:textColor="#000"
             android:layout_weight="1"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/_17sdp"
             />
 
         <TextView
@@ -34,9 +34,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="00,000"
-            android:textSize="20sp"
+            android:textSize="@dimen/_17ssp"
             android:fontFamily="@font/aaa"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/_17sdp"
             />
     </LinearLayout>
 

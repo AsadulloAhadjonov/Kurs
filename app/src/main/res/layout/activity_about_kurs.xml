@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/_40sdp"
         android:orientation="horizontal"
         android:background="@drawable/gradient"
         >
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:text="Uzbekistan"
             android:fontFamily="@font/bookos"
-            android:textSize="18sp"
+            android:textSize="@dimen/_15ssp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:textAlignment="center"
@@ -34,10 +34,10 @@
         android:layout_height="wrap_content"
         android:text="Kurs kodi:"
         android:fontFamily="@font/bookos"
-        android:textSize="18sp"
+        android:textSize="@dimen/_15ssp"
         android:textAlignment="center"
         android:textColor="#000"
-        android:layout_margin="20dp"
+        android:layout_margin="@dimen/_17sdp"
         />
 
     <TextView
@@ -46,10 +46,10 @@
         android:layout_height="wrap_content"
         android:text="Narxi:"
         android:fontFamily="@font/bookos"
-        android:textSize="18sp"
+        android:textSize="@dimen/_15ssp"
         android:textAlignment="center"
         android:textColor="#000"
-        android:layout_margin="20dp"
+        android:layout_margin="@dimen/_17sdp"
         />
 
     <TextView
@@ -58,10 +58,10 @@
         android:layout_height="wrap_content"
         android:text="Sotib olish narxi"
         android:fontFamily="@font/bookos"
-        android:textSize="18sp"
+        android:textSize="@dimen/_15ssp"
         android:textAlignment="center"
         android:textColor="#000"
-        android:layout_margin="20dp"
+        android:layout_margin="@dimen/_17sdp"
         />
 
     <TextView
@@ -70,10 +70,10 @@
         android:layout_height="wrap_content"
         android:text="Sotish narxi:"
         android:fontFamily="@font/bookos"
-        android:textSize="18sp"
+        android:textSize="@dimen/_15ssp"
         android:textAlignment="center"
         android:textColor="#000"
-        android:layout_margin="20dp"
+        android:layout_margin="@dimen/_17sdp"
         />
 
     <TextView
@@ -82,9 +82,9 @@
         android:layout_height="wrap_content"
         android:text="Yangilangan sanasi:"
         android:fontFamily="@font/bookos"
-        android:textSize="18sp"
+        android:textSize="@dimen/_15ssp"
         android:textColor="#000"
-        android:layout_margin="20dp"
+        android:layout_margin="@dimen/_17sdp"
         />
 
 </LinearLayout>

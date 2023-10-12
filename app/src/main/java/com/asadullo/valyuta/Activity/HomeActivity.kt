@@ -171,7 +171,11 @@ class HomeActivity : AppCompatActivity() {
             Toast.makeText(this, "Offline rejim", Toast.LENGTH_SHORT).show()
             binding.online.visibility = View.VISIBLE
             binding.online.setOnClickListener {
-                trueNetwork()
+                if (networkHP.isNetworkConnected()){
+                    trueNetwork()
+                }else{
+                    Toast.makeText(this, "Internet aloqasi mavjud emas", Toast.LENGTH_SHORT).show()
+                }
             }
             var list = dbHelper.dao().get()
             adapter = KursAdapter(list as ArrayList<MainValyuta>, object : KursAdapter.Click {
@@ -241,7 +245,8 @@ class HomeActivity : AppCompatActivity() {
         }catch (e:Exception){
             val dialog = AlertDialog.Builder(this)
 
-            dialog.setTitle("Offline rejimga kirish uchun hech bo'lmasa bir marotaba online rejimda bo'lishingiz kerak")
+            dialog.setTitle("Offline rejimga kirish uchun hech bo'lmasa bir marotaba \n" +
+                    "online rejimda bo'lishingiz kerak")
 
             dialog.setCancelable(false)
 
