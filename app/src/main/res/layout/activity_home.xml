@@ -303,7 +303,16 @@
             android:layout_height="wrap_content"
             android:text="Mavjud Kurslar"
             android:textSize="28sp"
+            android:layout_weight="1"
             android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_wifi_24"
+            android:layout_marginRight="20dp"
             />
 
     </LinearLayout>

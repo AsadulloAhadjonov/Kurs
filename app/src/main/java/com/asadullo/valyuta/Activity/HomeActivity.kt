@@ -46,6 +46,8 @@ class HomeActivity : AppCompatActivity() {
     }
 
     fun trueNetwork(){
+        Toast.makeText(this, "Online rejim", Toast.LENGTH_SHORT).show()
+        binding.online.visibility = View.GONE
         requestQueue = Volley.newRequestQueue(this)
         VolleyLog.DEBUG = true
         val jsonArrayRequest = JsonArrayRequest(
@@ -166,6 +168,11 @@ class HomeActivity : AppCompatActivity() {
 
     fun offlineListFun(){
         try {
+            Toast.makeText(this, "Offline rejim", Toast.LENGTH_SHORT).show()
+            binding.online.visibility = View.VISIBLE
+            binding.online.setOnClickListener {
+                trueNetwork()
+            }
             var list = dbHelper.dao().get()
             adapter = KursAdapter(list as ArrayList<MainValyuta>, object : KursAdapter.Click {
                 override fun click(position: Int, list: List<MainValyuta>) {
