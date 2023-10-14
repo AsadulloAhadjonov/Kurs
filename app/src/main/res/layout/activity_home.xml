@@ -4,108 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Activity.HomeActivity">
+    tools:context=".Activity.HomeActivity"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
-        android:orientation="horizontal"
         android:background="@drawable/gradient"
-        >
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/star"
             android:layout_width="@dimen/_20sdp"
             android:layout_height="@dimen/_20sdp"
-            android:src="@drawable/baseline_star_24"
             android:layout_gravity="center"
             android:layout_margin="@dimen/_15sdp"
-            />
+            android:src="@drawable/baseline_star_24" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Uzbekistan"
-            android:fontFamily="@font/aaa"
-            android:textSize="@dimen/_15ssp"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:fontFamily="@font/aaa"
+            android:text="Uzbekistan"
             android:textAlignment="center"
             android:textColor="#fff"
-            />
+            android:textSize="@dimen/_15ssp" />
+
         <ImageView
             android:id="@+id/info"
             android:layout_width="@dimen/_20sdp"
             android:layout_height="@dimen/_20sdp"
-            android:src="@drawable/baseline_info_24"
             android:layout_gravity="center"
             android:layout_margin="@dimen/_15sdp"
-            />
+            android:src="@drawable/baseline_info_24" />
     </LinearLayout>
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="@dimen/_170sdp"
-        android:scrollbarSize="0dp"
-        >
+        android:scrollbarSize="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
+
             <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/usa"
                 android:layout_width="@dimen/_285sdp"
                 android:layout_height="match_parent"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:background="@drawable/bac_blue"
                 android:layout_margin="@dimen/_7sdp"
-                android:id="@+id/usa"
+                android:background="@drawable/bac_blue"
                 android:padding="@dimen/_13sdp">
 
                 <ImageView
                     android:id="@+id/flag_img_usa"
                     android:layout_width="@dimen/_75sdp"
                     android:layout_height="@dimen/_40sdp"
-                    android:src="@drawable/img_1"
                     android:scaleType="centerCrop"
-                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/img_1"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/country_usa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="AQSH Dolari"
-                    android:textSize="@dimen/_15ssp"
                     android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:text="AQSH Dolari"
                     android:textColor="#fff"
-                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="@dimen/_15ssp"
                     app:layout_constraintLeft_toRightOf="@id/flag_img_usa"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/valyuta_name_usa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="USD"
-                    android:textSize="@dimen/_17ssp"
-                    android:textColor="#E6E6E6"
                     android:layout_marginHorizontal="@dimen/_15sdp"
-                    app:layout_constraintTop_toBottomOf="@id/country_usa"
+                    android:text="USD"
+                    android:textColor="#E6E6E6"
+                    android:textSize="@dimen/_17ssp"
                     app:layout_constraintLeft_toRightOf="@id/flag_img_usa"
-                    />
+                    app:layout_constraintTop_toBottomOf="@id/country_usa" />
 
                 <ImageView
                     android:id="@+id/valyuta_img_usa"
                     android:layout_width="@dimen/_27sdp"
                     android:layout_height="@dimen/_40sdp"
                     android:src="@drawable/baseline_attach_money_24"
-                    app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/valyuta_curs_usa"
@@ -113,12 +105,11 @@
                     android:layout_height="wrap_content"
                     android:text="00,00"
                     android:textColor="#fff"
-                    android:textStyle="bold"
                     android:textSize="@dimen/_25ssp"
-                    app:layout_constraintTop_toBottomOf="@id/flag_img_usa"
-                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    />
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/flag_img_usa" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -126,64 +117,59 @@
                     android:text="Uzbekistan"
                     android:textColor="#fff"
                     android:textSize="@dimen/_15ssp"
-                    app:layout_constraintTop_toBottomOf="@id/valyuta_img_usa"
-                    app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    />
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/valyuta_img_usa" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rus"
                 android:layout_width="@dimen/_285sdp"
                 android:layout_height="match_parent"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:background="@drawable/bac_red"
                 android:layout_margin="@dimen/_7sdp"
-                android:id="@+id/rus"
+                android:background="@drawable/bac_red"
                 android:padding="@dimen/_13sdp">
 
                 <ImageView
                     android:id="@+id/flag_img_rus"
                     android:layout_width="@dimen/_75sdp"
                     android:layout_height="@dimen/_40sdp"
-                    android:src="@drawable/img_3"
                     android:scaleType="centerCrop"
-                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/img_3"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/country_rus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rossiya"
-                    android:textSize="@dimen/_15ssp"
                     android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:text="Rossiya"
                     android:textColor="#fff"
-                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="@dimen/_15ssp"
                     app:layout_constraintLeft_toRightOf="@id/flag_img_rus"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/valyuta_name_rus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="RUB"
-                    android:textSize="@dimen/_17ssp"
-                    android:textColor="#E6E6E6"
                     android:layout_marginHorizontal="@dimen/_15sdp"
-                    app:layout_constraintTop_toBottomOf="@id/country_rus"
+                    android:text="RUB"
+                    android:textColor="#E6E6E6"
+                    android:textSize="@dimen/_17ssp"
                     app:layout_constraintLeft_toRightOf="@id/flag_img_rus"
-                    />
+                    app:layout_constraintTop_toBottomOf="@id/country_rus" />
 
                 <ImageView
                     android:id="@+id/valyuta_img_rus"
                     android:layout_width="@dimen/_27sdp"
                     android:layout_height="@dimen/_40sdp"
                     android:src="@drawable/baseline_currency_ruble_24"
-                    app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/valyuta_curs_rus"
@@ -191,12 +177,11 @@
                     android:layout_height="wrap_content"
                     android:text="00,00"
                     android:textColor="#fff"
-                    android:textStyle="bold"
                     android:textSize="@dimen/_25ssp"
-                    app:layout_constraintTop_toBottomOf="@id/flag_img_rus"
-                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    />
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/flag_img_rus" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -204,64 +189,59 @@
                     android:text="Uzbekistan"
                     android:textColor="#fff"
                     android:textSize="@dimen/_15ssp"
-                    app:layout_constraintTop_toBottomOf="@id/valyuta_img_rus"
-                    app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    />
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/valyuta_img_rus" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/yevro"
                 android:layout_width="@dimen/_285sdp"
                 android:layout_height="match_parent"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:background="@drawable/bac_green"
                 android:layout_margin="@dimen/_7sdp"
-                android:id="@+id/yevro"
+                android:background="@drawable/bac_green"
                 android:padding="@dimen/_13sdp">
 
                 <ImageView
                     android:id="@+id/flag_img"
                     android:layout_width="@dimen/_75sdp"
                     android:layout_height="@dimen/_40sdp"
-                    android:src="@drawable/img_5"
                     android:scaleType="centerCrop"
-                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/img_5"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/country"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Yevropa"
-                    android:textSize="@dimen/_15ssp"
                     android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:text="Yevropa"
                     android:textColor="#fff"
-                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="@dimen/_15ssp"
                     app:layout_constraintLeft_toRightOf="@id/flag_img"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/valyuta_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="EURO"
-                    android:textSize="@dimen/_17ssp"
-                    android:textColor="#E6E6E6"
                     android:layout_marginHorizontal="@dimen/_15sdp"
-                    app:layout_constraintTop_toBottomOf="@id/country"
+                    android:text="EURO"
+                    android:textColor="#E6E6E6"
+                    android:textSize="@dimen/_17ssp"
                     app:layout_constraintLeft_toRightOf="@id/flag_img"
-                    />
+                    app:layout_constraintTop_toBottomOf="@id/country" />
 
                 <ImageView
                     android:id="@+id/valyuta_img"
                     android:layout_width="@dimen/_27sdp"
                     android:layout_height="@dimen/_40sdp"
                     android:src="@drawable/baseline_euro_24"
-                    app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/valyuta_curs"
@@ -269,12 +249,11 @@
                     android:layout_height="wrap_content"
                     android:text="00,00"
                     android:textColor="#fff"
-                    android:textStyle="bold"
                     android:textSize="@dimen/_25ssp"
-                    app:layout_constraintTop_toBottomOf="@id/flag_img"
-                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    />
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/flag_img" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -282,10 +261,9 @@
                     android:text="Uzbekistan"
                     android:textColor="#fff"
                     android:textSize="@dimen/_15ssp"
-                    app:layout_constraintTop_toBottomOf="@id/valyuta_img"
-                    app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    />
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/valyuta_img" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
@@ -296,24 +274,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_15sdp"
-        android:gravity="center_vertical"
-        >
+        android:gravity="center_vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Mavjud Kurslar"
             android:textSize="@dimen/_19ssp"
-            android:layout_weight="1"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/online"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_wifi_24"
             android:layout_marginRight="@dimen/_15sdp"
-            />
+            android:src="@drawable/baseline_wifi_24" />
 
     </LinearLayout>
 
