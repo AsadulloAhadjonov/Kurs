@@ -30,7 +30,6 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var requestQueue: RequestQueue
     private lateinit var dbHelper: DbHelper
     private lateinit var networkHP: NetworkHP
-    private lateinit var offlineList:ArrayList<MainValyuta>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
