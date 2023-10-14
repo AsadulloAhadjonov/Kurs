@@ -12,7 +12,7 @@
         android:textSize="@dimen/_17ssp"
         android:textColor="#000"
         android:fontFamily="@font/bookos"
-        android:text="Mavjud kurslar O'zbekiston Respublikasi NBU bankidan rasmiy olingan kuraslar har kuni o'zgarib boradi \n O'zingiz istagan kurs xaqida ma'lumot olmoqchi bo'lsngiz o'sha kursingiz ustiga bir marotaba bosing"
+        android:text="Mavjud kurslar O'zbekiston Respublikasi NBU bankidan rasmiy olingan kuraslar har kuni o'zgarib boradi \n O'zingiz istagan kurs xaqida ma'lumot olmoqchi bo'lsangiz o'sha kursingiz ustiga bir marotaba bosing"
         />
 
     <TextView
